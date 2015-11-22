@@ -6,4 +6,4 @@ What are the main things someone should know about design and user experience?
 What is user experience design and why is it valuable?
 Which parts of the challenge did you find tedious?
 
-![Site Map](imgs/DBC-Site-Map.png)
+![Site Map](DBC-Site-Map.png)
