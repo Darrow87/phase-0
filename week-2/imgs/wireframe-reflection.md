@@ -34,6 +34,6 @@ I enjoyed wire framing the site. Saving everything to github etc has become a li
 
 But fortunately it is a very small portion of what we do.
 
-![website wireframe](wireframe.pdf)
+![website wireframe](index-wireframe.png)
 
-![website wireframe](wireframe Blog Index.pdf)
+![website wireframe](blog-wireframe.png)
