@@ -33,3 +33,7 @@ did do some basic research into some example wire frames.
 I enjoyed wire framing the site. Saving everything to github etc has become a little tedious though.
 
 But fortunately it is a very small portion of what we do.
+
+![website wireframe](wireframe.pdf)
+
+![website wireframe](wireframe Blog Index.pdf)
