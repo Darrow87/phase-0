@@ -37,3 +37,31 @@ a: link {
     font-size: 10px;
     text-align: center
 }
+
+.hline {
+     width:100%; height:1px; background: black
+}
+
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+That the files need to be in the same folder? At least I think this is correct. It started working when we did this.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+I changed the html to a table to get the columns. Also, I used display:inline to get the larger letters of Berkshire and Hathaway to be on the same line. It was hard trying to get the columns before we decided to use a table, I'm not sure if there was another way.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+Just normal CSS like
+a: link {
+    color: #800080;
+}
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+We added classes for the horizontal lines. We would add classes when there are multiple items we want to format, and an ID if we just wanted to format one.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+I'm having trouble really viewing the code using inspect element which is the only place I can see the CSS so it was hard to compare.
