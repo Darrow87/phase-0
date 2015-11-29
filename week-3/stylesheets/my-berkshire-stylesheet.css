@@ -1,0 +1,39 @@
+html {
+  background-color: ffffff;
+  color: #000080
+
+}
+a: visited {
+    color: #ff0000;
+}
+
+a: link {
+    color: #800080;
+}
+
+
+.small-font {
+    font-size: 10px
+}
+
+.heading {
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+
+}
+
+.first_letter {
+    font-size: 40px;
+    display: inline-block
+}
+
+.geico-break {
+    display: block;
+    margin: auto
+}
+
+.geico-font {
+    font-size: 10px;
+    text-align: center
+}
