@@ -43,3 +43,5 @@ Variables applied to a specific method. You would use them to store something th
 How was this challenge? Did you get a good review of some of the basics?
 
 Yes, it was good. I like that book.
+
+https://github.com/Darrow87/phase-0/blob/master/week-4/nums-letters.md    https://github.com/Darrow87/phase-0/blob/master/week-4/simple-string.rb    https://github.com/Darrow87/phase-0/blob/master/week-4/defining-variables.rb     https://github.com/Darrow87/phase-0/blob/master/week-4/basic-math.rb
