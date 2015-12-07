@@ -43,6 +43,7 @@ end
 
 # 1. total initial solution
 
+# I don't know what this means see the steps above, that is my pseudo code
 
 
 
@@ -62,6 +63,7 @@ end
 
 # 5. sentence_maker initial solution
 
+# I don't know what this means see the steps above, that is my pseudo code
 
 
 # 6. sentence_maker refactored solution
