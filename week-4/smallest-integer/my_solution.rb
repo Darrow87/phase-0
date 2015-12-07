@@ -24,7 +24,7 @@ def smallest_integer(list_of_nums)
   min = list_of_nums[0]
   counter = 0
 
-  while counter < list_of_nums.length - 1
+  while counter < list_of_nums.length
     if list_of_nums[counter] < min
       min = list_of_nums[counter]
     end
