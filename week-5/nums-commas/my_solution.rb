@@ -16,10 +16,15 @@
 # What are the steps needed to solve the problem?
 
 # Write a method that takes an integer as an argument
-# in the method, split that integer into an array
-# insert a comma into the array every 3 items of the array
-# reverse the array back to normal
-# join it back together into a string
+
+# In the method, split that integer into an array and reverse it
+
+# Insert a comma into the array every 3 items of the array
+
+# Reverse the array back to normal
+
+# Join it back together into a string and return that string
+
 
 # 1. Initial Solution
 
