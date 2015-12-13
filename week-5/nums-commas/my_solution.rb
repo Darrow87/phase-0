@@ -22,7 +22,7 @@
 # join it back together into a string
 
 # 1. Initial Solution
-=begin
+
 def separate_comma(int)
   arr = []
   new = int.to_s.reverse.split("")
@@ -38,11 +38,12 @@ def separate_comma(int)
 arr = arr.reverse.join("")
 p arr
 end
-=end
+
 
 
 # 2. Refactored Solution
-# I don't really know how to refactor this with new methods. I've tried to research and maybe I could use Regex to interate over the string somehow.
+
+# I'm not sure how to refactor this with new methods. I've tried to research and maybe I could use Regex to interate over the string somehow.
 
 # I tried to make my variable names more descriptive.
 
