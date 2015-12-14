@@ -1,8 +1,8 @@
 # Calculate the mode Pairing Challenge
 
-# I worked on this challenge [by myself, with: ]
+# I worked on this challenge [by myself, with: Thomas Huang]
 
-# I spent [] hours on this challenge.
+# I spent [2] hours on this challenge.
 
 # Complete each step below according to the challenge directions and
 # include it in this file. Also make sure everything that isn't code
@@ -12,9 +12,17 @@
 
 # 0. Pseudocode
 
-# What is the input?
-# What is the output? (i.e. What should the code return?)
+# What is the input? array
+# What is the output? (i.e. What should the code return?) the most frequently occuring number or numbers in the array
+
 # What are the steps needed to solve the problem?
+
+# create a hash and an empty array
+# iterate over the array
+  # add items of array to hash as key while increasing value by 1
+# sort the hash and store it's last value, which is the highest occurence, in a variable
+# push items to array satisfying conditions of stored variable, which is the highest occurence
+# output array
 
 # Initial Solution
 
@@ -38,7 +46,23 @@ end
 
 # 3. Refactored Solution
 
-
+# not sure how to refactor this exactly
 
 
 # 4. Reflection
+
+# Which data structure did you and your pair decide to implement and why?
+
+# We used both a hash and an array, hash because we can have a number correspond to the key
+
+# Were you more successful breaking this problem down into implementable pseudocode than the last with a pair?
+
+# yes
+
+# What issues/successes did you run into when translating your pseudocode to code?
+
+# trying to deal with multiple occurences of a highest occuring number
+
+# What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
+
+# each and sort_by
