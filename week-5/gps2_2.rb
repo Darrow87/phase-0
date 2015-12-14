@@ -33,12 +33,10 @@
 #   Output item: quantity
 
 
-
 def new_list
   list = {}
   return list
 end
-
 
 
 def add(list, item, quantity)
@@ -67,8 +65,6 @@ def update(list, item, quantity)
 end
 
 update(list, "ice cream", 1)
-
-new_list
 
 def print(list)
   list.each do |item, quantity|
