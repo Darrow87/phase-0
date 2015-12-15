@@ -5,34 +5,30 @@
 # iterate over that array and assign numbers to it - accountability group 1, 2, 3 etc
 
 # initial solution
-def acct_groups(list_of_students, split)
-  list_of_students = list_of_students.split(" ")
-  list_of_students.each_slice(4).to_a
-
-
-
-  def acct_group(list, num)
-groups = Hash.new
-
-  list = list.split(" ")
-  list.each_with_index do |obj, i|
-    indexplus1 = i + 1
-    if indexplus1 % num == 0
-      arr << obj
-      arr << "Accountability Group"
-
-    else
-        arr << obj
-    end
-
-
+def acct_groups(array)
+  array.each_slice(4) do |a, b, c, d|
+    p [a, b, c, d]
   end
-
-
-p arr
 end
 
-acct_group("alex john jason ryan jake jeff bob tammie zack liz lexie melissa tabby tom brian matt", 3)
+=begin
+What was the most interesting and most difficult part of this challenge?
 
+I couldnt really figure out how to do it, I'm not sure how to make sure groups are not less than 3.
 
+Do you feel you are improving in your ability to write pseudocode and break the problem down?
 
+I think so.
+
+Was your approach for automating this task a good solution? What could have made it even better?
+
+I'm not sure, this challenge was tough for me.
+
+What data structure did you decide to store the accountability groups in and why?
+
+array because I couldn't figure out how to do it in a hash. Also, can I make a hash where a key points to multiple values?
+
+What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
+
+each.slice
+=end
