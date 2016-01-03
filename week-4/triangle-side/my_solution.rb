@@ -1,4 +1,4 @@
-# I worked on this challenge [with: Meagan Elizabeth].
+# I worked on this challenge [with: Barow Kwan].
 
 
 # Your Solution Below
