@@ -27,7 +27,7 @@ def
   code
 end
 
-
+=begin
 
 What is the difference between a local variable and a method?
 
@@ -44,3 +44,5 @@ How do you run an RSpec file from the command line?
 What was confusing about this material? What made sense?
 
 It was mostly review. It was alittle confusing learning how everything is a method, even when you can't see the .method. Also, it confused me a couple times needing to make my strings match with strings instead of integers.
+
+=end
