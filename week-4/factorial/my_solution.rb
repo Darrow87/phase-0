@@ -4,9 +4,15 @@
 
 
 # Your Solution Below
-def factorial(number)
-  sum = 1
-  while number > 0
-    sum = sum * number
-    number -= 1
+def factorial(num)
+if num == 0
+  return 1
 end
+x = num - 1
+  until x == 0
+    num = num * x
+    x = x - 1
+  end
+return num
+end
+
