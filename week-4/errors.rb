@@ -169,6 +169,7 @@ require_relative "cartmans_essay.md"
 
 # --- REFLECTION -------------------------------------------------------
 # Write your reflection below as a comment.
+=begin
 Which error was the most difficult to read?
 
 The last one because of the pathway
@@ -184,3 +185,4 @@ Yes
 When you encounter errors in your future code, what process will you follow to help you debug?
 
 Google the error
+=end
