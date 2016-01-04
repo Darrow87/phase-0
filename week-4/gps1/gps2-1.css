@@ -1,3 +1,31 @@
 html {
   background-color: red;
 }
+
+h1 {
+  text-align: center;
+
+}
+header {
+  background-color: yellow;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/236x/a4/f0/0b/a4f00b17107caaa62505b950525df5ad.jpg");
+}
+
+.column-1 {
+  background-color: blue;
+  float: right;
+  width: 50%;
+  font-family: arial;
+}
+
+.column-2 {
+  background-color: pink;
+  float: left;
+  width: 50%;
+  font-family: arial;
+}
+
+footer {
+  background-color: green;
+  clear: both;
+}
