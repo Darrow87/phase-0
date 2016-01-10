@@ -1,6 +1,6 @@
 # Calculate the mode Pairing Challenge
 
-# I worked on this challenge [by myself, with: Thomas Huang]
+# I worked on this challenge [by myself, with: jerrie dequina]
 
 # I spent [2] hours on this challenge.
 
