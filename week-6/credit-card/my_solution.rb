@@ -1,13 +1,13 @@
 # Class Warfare, Validate a Credit Card Number
 
 
-# I worked on this challenge [by myself, with: ].
-# I spent [#] hours on this challenge.
+# I worked on this challenge [by myself].
+# I spent [1.5] hours on this challenge.
 
 # Pseudocode
 
-# Input:
-# Output:
+# Input: credit card number
+# Output: true/false
 # Steps:
 
 
@@ -18,57 +18,72 @@
 
 class CreditCard
   def initialize(card_number)
+    @card_number_odds = []
+    @card_number_evens = []
+    @even_sum = 0
+    @odd_sum = 0
     @card_number = card_number
-    raise ArgumentError.new("Please enter a 16 digit card number") unless card_number.to_s.length == 16
+    if @card_number.to_s.length != 16
+      raise ArgumentError.new("Please enter a 16 digit card number")
+    end
   end
 
-  def double
+  def check_card
     @card_number = @card_number.to_s.reverse.split("")
+
     @card_number.each_with_index do |num, index|
-      if index.to_i.odd?
-        num.to_i * 2
+      if index % 2 != 0
+        @card_number_odds << num
+      else
+        @card_number_evens << num
       end
     end
 
+    @card_number_evens.map! { |num| num.to_i }
+    @card_number_odds.map! { |num| num.to_i*2 }
 
+    @card_number_evens = @card_number_evens.join
+    @card_number_odds = @card_number_odds.join
+
+    @card_number_evens = @card_number_evens.split("")
+    @card_number_odds = @card_number_odds.split("")
+
+    @card_number_evens.map! { |num| num.to_i }
+    @card_number_odds.map! { |num| num.to_i }
+
+    @card_number_evens.each {|num| @even_sum += num}
+    @card_number_odds.each {|num| @odd_sum += num}
+
+    total_sum = @even_sum + @odd_sum
+
+    if total_sum % 10 == 0
+      return true
+    else
+      return false
+    end
   end
-
 end
 
+card = CreditCard.new(4563960122001999)
 
+card.check_card
 
 # Refactored Solution
+=begin
+What was the most difficult part of this challenge for you and your pair?
 
+Sometimes my destructive methods don't work and I need to reset the variable equal to itself and I don't know why.
 
-card_number = 123434564567
+What new methods did you find to help you when you refactored?
 
-card_number = card_number.to_s.reverse.split("")
+I didn't really find any new methods refactoring.
 
-card_number_odds = []
-card_number_evens = []
-card_number.each_with_index do |num, index|
-  if index % 2 != 0
-    card_number_odds << num
-  else
-    card_number_evens << num
-  end
-end
+What concepts or learnings were you able to solidify in this challenge?
 
-card_number_evens.map! { |num| num.to_i }
-card_number_odds.map! { |num| num.to_i*2 }
+I remembered how to use each_with_index
 
-even_sum = 0
-odd_sum = 0
-card_number_evens.each {|num| even_sum += num}
-card_number_odds.each {|num| odd_sum += num}
+=end
 
-total_sum = even_sum + odd_sum
-
-if total_sum % 10
-  true
-else
-  false
-end
 
 
 
@@ -77,3 +92,7 @@ end
 
 
 # Reflection
+
+What was the most difficult part of this challenge for you and your pair?
+What new methods did you find to help you when you refactored?
+What concepts or learnings were you able to solidify in this challenge?
