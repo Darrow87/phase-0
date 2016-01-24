@@ -7,23 +7,33 @@
 #
 #
 require_relative 'state_data'
+# require relative complements the built in method by loading a file that is required by the require relative statement
+# with relative it searches in the current directory for the required file
+
 
 class VirusPredictor
 
+# Load all variables for our class when a new instance is created
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
 
+# This method calls the methods predicted_deaths and speed_of_death
+
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths
+    speed_of_spread
   end
 
+
+# Cannot call private methods on instances of the Virus Predictor class, used only for internal calculations
   private
 
-  def predicted_deaths(population_density, population, state)
+
+# Based on population density and state, computes the number of predicted deaths and prints this out
+  def predicted_deaths
     # predicted deaths is solely based on population density
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -41,7 +51,9 @@ class VirusPredictor
 
   end
 
-  def speed_of_spread(population_density, state) #in months
+
+# Based on population density and state, computes the speed of spread and prints this out
+  def speed_of_spread #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     speed = 0.0
@@ -69,6 +81,11 @@ end
 # DRIVER CODE
  # initialize VirusPredictor for each state
 
+# refactored driver code
+
+all_states= STATE_DATA.each do |state,popinfo|
+  VirusPredictor.new(state, popinfo[:population_density],  popinfo[:population]).virus_effects
+end
 
 alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
 alabama.virus_effects
@@ -85,3 +102,23 @@ alaska.virus_effects
 
 #=======================================================================
 # Reflection Section
+=begin
+
+What are the differences between the two different hash syntaxes shown in the state_data file? One is a hash rocket and the other uses a symbol.
+
+What does require_relative do? How is it different from require?
+It allows you access to a different file. Relative searches within the same directory
+
+
+What are some ways to iterate through a hash?
+Using each or other enumerables
+
+When refactoring virus_effects, what stood out to you about the variables, if anything?
+That we did not need to again reference the instance variables that we defined upon initialization
+
+
+What concept did you most solidify in this challenge?
+How instance variables are used, also how powerful each can be
+
+
+=end
