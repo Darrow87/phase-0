@@ -1,4 +1,4 @@
-<!--
+
 1) SELECT id,state_name,population_density,region_id FROM states;
 2) SELECT id,region_name FROM region;
 3) SELECT state_name,population from states;
@@ -9,7 +9,7 @@
 8) SELECT state_name, region_id ORDER BY region ASC
 9)SELECT region_name FROM states WHERE region_name LIKE "Central"
 10)SELECT state_name FROM states SELECT region_name FROM regions ORDER BY region_id ASC
-
+<!--
 reflection
 1) Databases are for easily accesing onformation
 2) One to many is when you will have the same identifier corresponding to a larger group that will be repeating over and over again
